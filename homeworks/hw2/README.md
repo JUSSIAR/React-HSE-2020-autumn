@@ -22,4 +22,4 @@ git push
 
 * Добавть меня в коллабораторы вашего репозитория
 
-![](./add_collaborator.png)
+Settings -> manage access -> invite collaborator -> ввести мой ник на github `valerystatinov`
