@@ -1,4 +1,4 @@
-### **ДЗ 4 - Add tasks** - deadline 23:59 23.10
+### **ДЗ 4 - Add tasks** - deadline 23:59 25.10
 
 Необходимо реализовать добавление задач в TaskTracker:
 
