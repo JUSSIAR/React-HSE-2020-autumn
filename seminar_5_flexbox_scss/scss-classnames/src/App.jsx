@@ -5,8 +5,8 @@ import styles from "./App.module.scss";
 
 const cx = classnames.bind(styles);
 
-const MyInput = ({ placeholder, type }) => (
-  <input className={cx("input")} placeholder={placeholder} type={type} />
+const MyInput = ({ placeholder, type, theme }) => (
+  <input className={cx("input", `input-theme-${theme}`)} placeholder={placeholder} type={type} />
 );
 
 const MyButton = ({ children }) => (
@@ -25,7 +25,7 @@ class App extends React.Component {
   render() {
     return (
       <div
-        className={cx("container")}
+        className={cx("container", `container-theme-${this.state.theme}`)}
       >
         <div className={cx("radios")}>
           <div>
@@ -54,10 +54,11 @@ class App extends React.Component {
         </div>
 
         <div className={cx("content")}>
-          <MyInput placeholder="Login" type="text" />
+          <MyInput placeholder="Login" type="text" theme={this.state.theme} />
           <MyInput
             placeholder="Password"
             type="password"
+            theme={this.state.theme}
           />
           <MyButton>Sign in</MyButton>
         </div>
